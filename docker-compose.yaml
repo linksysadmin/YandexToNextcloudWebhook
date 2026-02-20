@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  webhook:
+    build: .
+    container_name: flask_webhook
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    restart: always
