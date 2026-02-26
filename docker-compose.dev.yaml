@@ -7,5 +7,3 @@ services:
     env_file:
       - .env
     restart: always
-#    expose:
-#      - "5000"  # виден только другим контейнерам / internal network
