@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   webhook:
     build: .
@@ -9,3 +7,5 @@ services:
     env_file:
       - .env
     restart: always
+#    expose:
+#      - "5000"  # виден только другим контейнерам / internal network
